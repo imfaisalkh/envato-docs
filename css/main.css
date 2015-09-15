@@ -1,0 +1,347 @@
+/* ==========================================================================
+   SEMANTIC TAGS
+   ========================================================================== */
+
+
+body {
+    border: 25px solid #222;
+    font-family: 'Muli', sans-serif;
+    font-size: 16px;
+    background:#222;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+    line-height: 1.5em;
+}
+h1 {
+    font-size:44px;
+    letter-spacing: -1px;
+}
+h2 {
+    font-size: 26px;
+}
+h3 {
+    font-size: 18px;
+}
+a {
+    color: #000;
+    text-decoration: none;
+    border-bottom: 2px solid #1EEDC8;
+}
+a:hover {
+    color: #fff;
+    background:#222;
+}
+p {
+    margin-bottom: 30px;
+}
+ul, ol {
+    margin-left: 50px;
+    list-style: square outside none;
+}
+li {
+    padding: 7px;
+}
+pre code {
+    background: transparent;
+    border-width: 0;
+    padding: 0;
+}
+
+
+
+/* ==========================================================================
+   DOCS HEADER
+   ========================================================================== */
+
+.row {
+    max-width: 100%;
+}
+
+#site-header {
+    position: relative;
+    height: 525px;
+    background: url('../img/hero-default.png') no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+    padding-top: 105px;
+}
+#site-header .name {
+}
+#site-header .name h3 {
+    font-size: 60px;
+    font-weight: 800;
+    letter-spacing: 0;
+    color: #fff;
+    text-transform: uppercase;
+    margin: 0 0 5px 0;
+    padding: 0 15px;
+}
+#site-header .name p {
+    display: inline-block;
+    background: #feea36;
+    color: #000;
+    font-size: 18px;
+    padding: 5px 10px;
+}
+
+#site-header ul.meta {
+    list-style: none;
+    margin-left: 0;
+    margin-top: 70px;
+    display: inline-block;
+    border-top: 1px solid rgba(255, 255, 255, 0.8);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.8);
+    padding: 10px 35px;
+}
+#site-header ul.meta li {
+    font-size: 18px;
+    line-height: 1.7;
+    padding: 0;
+    display: inline-block;
+    margin-right: 25px;
+}
+#site-header ul.meta li:last-child {
+    margin-right: 0;
+}
+#site-header ul.meta li a {
+    color: #fff;
+    font-weight: 300;
+    border-bottom: 0;
+}
+#site-header ul.meta li a:hover {
+    background: #fff;
+    color: #000;
+    border-bottom: 0;
+}
+
+
+/* ==========================================================================
+   DOCS BODY
+   ========================================================================== */
+
+
+#site-body {
+    position: relative;
+    background: #fff;
+    padding: 115px 0 60px 0;
+}
+#site-body #main-content {
+    padding-left: 108px;
+    padding-right: 50px;
+}
+
+
+#site-body .section {
+    border-bottom: 1px solid #000;
+    margin-bottom: 75px;
+    padding-bottom: 45px;
+}
+#site-body .section:last-of-type {
+    border-bottom: 0;
+    padding-bottom: 0;
+}
+#site-body .sub-section {
+    border-top: 1px solid #ccc;
+    margin-top: 45px;
+    padding-top: 45px;
+}
+
+
+#site-body p.lead {
+    font-family: 'Raleway', sans-serif;
+    font-size: 26px;
+}
+
+#sidebar {
+    position: absolute;
+    right: 0;
+    top: 0;
+    left: auto;
+    padding-right: 0;
+}
+#sidebar.fixed {
+    right: 25px;
+}
+
+#sidebar h3 {
+    font-family: 'Muli', sans-serif;
+    font-weight: 800;
+    font-size: 22px;
+
+    padding-bottom: 10px;
+    border-bottom: 1px solid #000;
+    margin-right: 20%;    
+}
+
+#sidebar .sticky {
+    padding-left: 65px;
+    padding-bottom: 40px;
+    padding-top: 65px;
+    border-left: 1px solid #000;
+    border-bottom: 1px solid #000;
+    background: #fff;
+    margin-left: 35px;
+}
+#sidebar ol {
+    font-family: 'Muli', sans-serif;
+    list-style: decimal inside none;
+    margin: 40px 0 20px 0;
+}
+#sidebar ol li {
+    font-size: 16px;
+    padding: 0;
+    margin: 15px 0;
+}
+#sidebar ol li a {
+    color: #000;
+    border-bottom: 0;
+    padding: 5px 0;
+}
+#sidebar ol li.active a,
+#sidebar ol li a:hover,
+#sidebar ol li a:active
+{
+    border-bottom: 2px solid #1EEDC8;
+    font-weight: bold;
+    background: transparent;
+}
+
+
+[data-magellan-expedition], [data-magellan-expedition-clone] {
+    width: 33%;
+    min-width: 0;
+    padding: 0;
+}
+
+
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+
+}
+
+@media print,
+       (-o-min-device-pixel-ratio: 5/4),
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 120dpi) {
+
+}
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+/* ==========================================================================
+   Print styles
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after {
+        background: transparent !important;
+        color: #000 !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
